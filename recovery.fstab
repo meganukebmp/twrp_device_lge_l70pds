@@ -1,0 +1,8 @@
+# mount point    fstype    device                    device2                       flags
+/data            auto      /dev/block/platform/msm_sdcc.1/by-name/userdata
+/cache           auto      /dev/block/platform/msm_sdcc.1/by-name/cache
+/system          auto      /dev/block/platform/msm_sdcc.1/by-name/system
+/boot            emmc      /dev/block/platform/msm_sdcc.1/by-name/boot
+/recovery        emmc      /dev/block/platform/msm_sdcc.1/by-name/recovery
+# commented out to fix reset/wipe when entered through factory reset /misc            emmc      /dev/block/platform/msm_sdcc.1/by-name/misc
+/sdcard          auto      /dev/block/mmcblk1p1      /dev/block/mmcblk1            flags=display="External Storage";removable;storage

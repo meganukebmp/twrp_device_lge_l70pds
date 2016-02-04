@@ -1,1 +1,1 @@
-# twrp_device_lge_l70pn
+## TWRP device tree for l70pn (D290X)
