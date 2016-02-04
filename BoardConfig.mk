@@ -35,19 +35,21 @@ TARGET_USERIMAGES_USE_F2FS := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 
 # Recovery
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/msm_hsusb/gadget/lun%d/file"
 BOARD_SUPPRESS_EMMC_WIPE := true
 
 # TWRP
+TW_NO_SCREEN_BLANK := true
+TW_MAX_BRIGHTNESS := 255
+TW_BRIGHTNESS_PATH := "/sys/devices/fd900000.qcom,mdss_mdp/qcom,mdss_fb_primary.133/leds/lcd-backlight/brightness"
+TW_EXCLUDE_MTP := true
 HAVE_SELINUX := true
 TW_THEME := portrait_mdpi
-# RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_NO_USB_STORAGE := true
 TW_HAS_DOWNLOAD_MODE := true
 TW_NO_REBOOT_BOOTLOADER := true
-TW_NO_SCREEN_TIMEOUT := true
-TW_NO_SCREEN_BLANK := true
+#TW_NO_SCREEN_TIMEOUT := true
+#TW_NO_SCREEN_BLANK := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 BOARD_HAS_NO_SELECT_BUTTON := true
-RECOVERY_SDCARD_ON_DATA := true
+#RECOVERY_SDCARD_ON_DATA := true
