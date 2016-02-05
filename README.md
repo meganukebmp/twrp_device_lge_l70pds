@@ -1,1 +1,1 @@
-## TWRP device tree for l70pn (D290X)
+## TWRP device tree for l70pds (D295)
