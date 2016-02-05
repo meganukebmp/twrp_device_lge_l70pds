@@ -8,9 +8,9 @@ How to setup build environment and compile TWRP for LG L Fino D295:
 
 3) Type the following commands:
 
-repo init -u https://github.com/marduk191/recovery_manifest.git -b android-5.1
+  repo init -u https://github.com/marduk191/recovery_manifest.git -b android-5.1
 
-repo sync
+  repo sync
 
 4) After repo sync is done, open Files, click on View menu and make sure "Show Hidden Files" option is checked.
 
@@ -18,11 +18,11 @@ repo sync
 
 6) Change the following line from:
 
-<project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs"/>
+  "<project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs"/>"
 
 To:
 
-<project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-6.0" groups="pdk-cw-fs"/>
+  "<project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-6.0" groups="pdk-cw-fs"/>"
 
 7) Save the file and do another repo sync. This one should be much faster, as it only has to sync 6.0 recovery.
 
@@ -34,15 +34,15 @@ To:
 
 11) CD to ~/twrp folder and type the following commands:
 
-cd ~/twrp
+  cd ~/twrp
 
-make clobber
+  make clobber
 
-. build/envsetup.sh
+  . build/envsetup.sh
 
-lunch omni_l70pds-userdebug
+  lunch omni_l70pds-userdebug
 
-make -j# recoveryimage 
+  make -j# recoveryimage 
 (# stands for the amount of cores your processor has, -j# can be ommited, it just compiles a lot faster with that parameter.)
 
 12) Your ready recovery image should be at: ~/twrp/out/target/product/l70pds/recovery.img
