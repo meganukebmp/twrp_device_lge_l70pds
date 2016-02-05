@@ -1,1 +1,1 @@
-add_lunch_combo omni_l70pn-userdebug
+add_lunch_combo omni_l70pds-userdebug
