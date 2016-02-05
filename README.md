@@ -16,13 +16,9 @@ How to setup build environment and compile TWRP for LG L Fino D295:
 
 5) Open the following .xml file with your preferred Text Editor: ~/twrp/.repo/manifest.xml
 
-6) Change the following line from:
+6) Find the following line and replace as follows:
 
-  "<project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-5.1" groups="pdk-cw-fs"/>"
-
-To:
-
-  "<project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-6.0" groups="pdk-cw-fs"/>"
+  android_bootable_recovery, find android-5.1 and replace it to android-6.0
 
 7) Save the file and do another repo sync. This one should be much faster, as it only has to sync 6.0 recovery.
 
